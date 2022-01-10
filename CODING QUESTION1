@@ -42,20 +42,21 @@ public class LabTestQ1 {
 	    
 	    if (totalprice>100)
 	    {
-	      discountprice=totalprice*(20/100);
-	      System.out.println("Discount receive : " + discountprice);
+	      discountprice=totalprice*0.2;
 	    }
 	    else 
 	    {
-	      discountprice=totalprice*(10/100);
+	      discountprice=totalprice*0.1;
+
+	    }
 	      System.out.printf("Discount receive : %.2f" , discountprice);
 	      System.out.println("");
-	    }
-	    
 	    paidprice=totalprice-discountprice;
 	    System.out.println("Price to be paid : " + paidprice);
 	  }
 	
 
 	}
+
+
 
