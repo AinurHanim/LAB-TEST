@@ -1,0 +1,61 @@
+package LabTestQ1;
+import java.util.Scanner;
+public class LabTestQ1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    int item;
+	    double price1;
+	    double price2;
+	    double price3;
+	    int quantity1;
+	    int quantity2;
+	    int quantity3;
+	    double totalprice;
+	    double discountprice;
+	    double paidprice;
+	    
+	    Scanner scan = new Scanner(System.in);
+	    
+	    System.out.println("Enter the number of items : ");
+	    item = scan.nextInt();
+	    System.out.println("Enter the price of first item : RM ");
+	    price1 = scan.nextDouble();
+	    System.out.println("Enter the quantity of first items : ");
+	    quantity1 = scan.nextInt();
+	    
+	    System.out.println("");
+	    System.out.println("Enter price of second item : RM");
+	    price2 = scan.nextDouble();
+	    System.out.println("Enter quantity of second item : ");
+	    quantity2 = scan.nextInt();
+	    System.out.println("");
+	    
+	    System.out.println("Enter price of third item : RM");
+	    price3 = scan.nextDouble();
+	    System.out.println("Enter quantity of third item : ");
+	    quantity3 = scan.nextInt();
+	    System.out.println("");
+	    
+	    totalprice = (price1*quantity1) + (price2*quantity2) + (price3*quantity3);
+	    System.out.println("Total price : RM " + totalprice);
+	    
+	    if (totalprice>100)
+	    {
+	      discountprice=totalprice*(20/100);
+	      System.out.println("Discount receive : " + discountprice);
+	    }
+	    else 
+	    {
+	      discountprice=totalprice*(10/100);
+	      System.out.printf("Discount receive : %.2f" , discountprice);
+	      System.out.println("");
+	    }
+	    
+	    paidprice=totalprice-discountprice;
+	    System.out.println("Price to be paid : " + paidprice);
+	  }
+	
+
+	}
+
